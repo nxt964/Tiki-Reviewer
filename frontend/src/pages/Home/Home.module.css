@@ -1,0 +1,62 @@
+.container {
+    padding: 30px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary-color);
+
+  & h1 {
+    font-weight: 800;
+  }
+
+  & h1:first-child {
+    margin-bottom: 12px;
+  }
+
+  & .icon {
+    margin-left: 15px;
+  }
+}
+
+.content {
+    & label {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.input-container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    & input {
+        flex: 1 1 200px;
+        padding: 5px 10px;
+        font-size: 16px;
+        min-width: 0;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        outline: none;
+        height: 47px;
+    }
+
+    & input:focus {
+        border-color: var(--primary-color);
+    }
+
+    & button {
+        padding: 10px 20px;
+        text-wrap: nowrap;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}

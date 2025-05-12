@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    
+    & p {
+        margin-bottom: 0;
+    }
+}
+
+.img {
+    height: 100%;
+    border-radius: 20%;
+    height: calc(60px + 5vw);
+}
+
+.name {
+    margin-left: 8px;
+    font-size: calc(20px + 4vw);
+    font-weight: 900;
+    text-wrap: wrap;
+    background: linear-gradient(to right, var(--primary-color), #1A4A81);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    flex: 1 1 150px;
+}
+
+.link {
+    text-decoration: none;
+    display: flex;
+
+}

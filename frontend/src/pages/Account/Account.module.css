@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.account {
+  display: flex;
+  gap: 5rem;
+  background-color: var(--body-gradient);
+  width: 80%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  width: 50%;
+}
+
+.info {
+
+  & .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Table styling */
+.info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info td {
+  padding: 1rem;
+  color: #555;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.info tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.info td:first-child {
+  font-weight: bold;
+  color: var(--text-color);
+  width: 30%;
+}
+
+.info td:last-child {
+  color: #666;
+}
+
+.info tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info tr:last-child {
+  border-bottom: none;
+}
+
+/* Password Fields */
+
+.password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.password-input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.password-input:focus {
+  border-color: var(--primary-color);
+}
+
+/* Style for 'Password does not match' message */
+.invalid {
+  font-size: 0.9rem;
+  color: #f44336;
+  margin-left: 5px;
+}
+
+.button {
+  padding: 12px 24px;
+  width: auto;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  color: var(--button-color);
+  border: none;
+  border-radius: var(--border-radius-btn);
+  box-shadow: var(--box-shadow-button);
+  color: white; 
+}

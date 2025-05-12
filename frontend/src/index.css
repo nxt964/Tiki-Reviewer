@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", "Roboto", sans-serif !important;
+}
+
+#root {
+  height: 100%;
+}
+
+:root {
+  --primary-color: #3493ff;
+  --text-color: #000;
+  --button-color: #fff;
+  --form-color: #fff;
+  --border-color: #d9d9d9;
+  --box-shadow-item: 4px 4px 4px rgb(0, 0, 0, 25%);
+  --box-shadow-button: 0 4px 4px rgb(0, 0, 0, 25%);
+  --background-gradient: linear-gradient(
+    to right,
+    #1a4a81,
+    var(--primay-color)
+  );
+  --body-gradient: linear-gradient(to bottom, #f2fcff, #faf6ff);
+
+  --margin-element-form: 20px;
+  --border-radius-inp: 4px;
+  --border-radius-btn: 8px;
+  --border-radius-form: 10px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--button-color);
+  border: none;
+  border-radius: var(--border-radius-btn) !important;
+  box-shadow: var(--box-shadow-button);
+  transition: opacity 0.15s; 
+}
+
+button:not(:disabled):hover {
+  cursor: pointer;
+  opacity: 0.7;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+button:disabled {
+  background-color: var(--border-color);
+  cursor: default;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
